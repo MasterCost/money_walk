@@ -35,6 +35,10 @@ DRIVE_API = "https://www.googleapis.com/drive/v3"
 DRIVE_UPLOAD = "https://www.googleapis.com/upload/drive/v3"
 DATA_FILE_NAME = "money-walk-data.csv"
 
+@app.route('/google6e902da1b45f8bcb.html')
+def google_verify():
+    return app.send_static_file('google6e902da1b45f8bcb.html')
+
 oauth = OAuth(app)
 oauth.register(
     name="google",
